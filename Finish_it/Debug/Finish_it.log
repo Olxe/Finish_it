@@ -1,0 +1,69 @@
+﻿  animation.cpp
+  animationmanager.cpp
+  assetmanager.cpp
+  csprite.cpp
+  cvertexarray.cpp
+  entity.cpp
+  irondoor.cpp
+  piketrap.cpp
+  pressureplate.cpp
+  key.cpp
+  object.cpp
+  physicalshape.cpp
+  physicaltile.cpp
+  chest.cpp
+  lever.cpp
+  stair.cpp
+  torch.cpp
+  wooddoor.cpp
+  debugphysic.cpp
+  mycontactlistenner.cpp
+  Génération de code en cours...
+  Compilation en cours...
+  physicalbody.cpp
+  physicalentity.cpp
+  hero1.cpp
+  hero2.cpp
+  heroes.cpp
+  inventory.cpp
+  item.cpp
+  stats.cpp
+  tilemap.cpp
+  cview.cpp
+  game.cpp
+  command.cpp
+  cwindow.cpp
+  eventmanager.cpp
+  inputmanager.cpp
+  settings.cpp
+  box2dworld.cpp
+  levelmanager.cpp
+  world.cpp
+  main.cpp
+  Génération de code en cours...
+  Compilation en cours...
+  layout.cpp
+  objectlayout.cpp
+  tilelayout.cpp
+  loadmap.cpp
+  datanode.cpp
+  imagenode.cpp
+  layernode.cpp
+  mapnode.cpp
+  objectgroupnode.cpp
+  objectnode.cpp
+  propertiesnode.cpp
+  propertynode.cpp
+  tilenode.cpp
+  tilesetnode.cpp
+  ellipse.cpp
+  point.cpp
+  polygone.cpp
+  polyline.cpp
+  shape.cpp
+  tinyxml2.cpp
+  Génération de code en cours...
+  Compilation en cours...
+  player.cpp
+  Génération de code en cours...
+  Finish_it.vcxproj -> C:\Users\bugno\Documents\GitHub\Finish_it\Finish_it\Debug\Finish_it.exe

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{8F7376BE-2B9D-4954-8821-38803AD1841D}</ProjectGuid>
+    <RootNamespace>Finishit</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\bugno\Documents\Programming\Libraries\SFML\SFML-2.4.2-windows-vc14-32-bit\SFML-2.4.2\include;C:\Users\bugno\Documents\Programming\Libraries\Box2D\Build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\bugno\Documents\Programming\Libraries\SFML\SFML-2.4.2-windows-vc14-32-bit\SFML-2.4.2\lib;C:\Users\bugno\Documents\Programming\Libraries\Box2D\Build\x86\debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-audio-d.lib;sfml-network-d.lib;sfml-system-d.lib;%(AdditionalDependencies);Box2D.lib</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\bugno\Documents\Programming\Libraries\SFML\SFML-2.4.2-windows-vc14-32-bit\SFML-2.4.2\include;C:\Users\bugno\Documents\Programming\Libraries\Box2D\Build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-audio.lib;sfml-network.lib;sfml-system.lib;%(AdditionalDependencies);Box2D.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\bugno\Documents\Programming\Libraries\SFML\SFML-2.4.2-windows-vc14-32-bit\SFML-2.4.2\lib;C:\Users\bugno\Documents\Programming\Libraries\Box2D\Build\x86\release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Entities\Animations\animation.cpp" />
+    <ClCompile Include="Src\Entities\Animations\animationmanager.cpp" />
+    <ClCompile Include="Src\Entities\Entity\assetmanager.cpp" />
+    <ClCompile Include="Src\Entities\Entity\csprite.cpp" />
+    <ClCompile Include="Src\Entities\Entity\cvertexarray.cpp" />
+    <ClCompile Include="Src\Entities\Entity\entity.cpp" />
+    <ClCompile Include="Src\Entities\Object\Actionable\irondoor.cpp" />
+    <ClCompile Include="Src\Entities\Object\Actionable\piketrap.cpp" />
+    <ClCompile Include="Src\Entities\Object\Actionable\pressureplate.cpp" />
+    <ClCompile Include="Src\Entities\Object\Collectable\key.cpp" />
+    <ClCompile Include="Src\Entities\Object\object.cpp" />
+    <ClCompile Include="Src\Entities\Object\physicalshape.cpp" />
+    <ClCompile Include="Src\Entities\Object\physicaltile.cpp" />
+    <ClCompile Include="Src\Entities\Object\Usable\chest.cpp" />
+    <ClCompile Include="Src\Entities\Object\Usable\lever.cpp" />
+    <ClCompile Include="Src\Entities\Object\Usable\stair.cpp" />
+    <ClCompile Include="Src\Entities\Object\Usable\torch.cpp" />
+    <ClCompile Include="Src\Entities\Object\Usable\wooddoor.cpp" />
+    <ClCompile Include="Src\Entities\Physic\debugphysic.cpp" />
+    <ClCompile Include="Src\Entities\Physic\mycontactlistenner.cpp" />
+    <ClCompile Include="Src\Entities\Physic\physicalbody.cpp" />
+    <ClCompile Include="Src\Entities\Physic\physicalentity.cpp" />
+    <ClCompile Include="Src\Entities\Playable\hero1.cpp" />
+    <ClCompile Include="Src\Entities\Playable\hero2.cpp" />
+    <ClCompile Include="Src\Entities\Playable\heroes.cpp" />
+    <ClCompile Include="Src\Entities\Playable\inventory.cpp" />
+    <ClCompile Include="Src\Entities\Playable\Inventory\Item\item.cpp" />
+    <ClCompile Include="Src\Entities\Statistics\stats.cpp" />
+    <ClCompile Include="Src\Entities\Tilemap\tilemap.cpp" />
+    <ClCompile Include="Src\Game\cview.cpp" />
+    <ClCompile Include="Src\Game\game.cpp" />
+    <ClCompile Include="Src\Game\Window\command.cpp" />
+    <ClCompile Include="Src\Game\Window\cwindow.cpp" />
+    <ClCompile Include="Src\Game\Window\eventmanager.cpp" />
+    <ClCompile Include="Src\Game\Window\inputmanager.cpp" />
+    <ClCompile Include="Src\Game\Window\settings.cpp" />
+    <ClCompile Include="Src\Game\World\box2dworld.cpp" />
+    <ClCompile Include="Src\Game\World\levelmanager.cpp" />
+    <ClCompile Include="Src\Game\World\world.cpp" />
+    <ClCompile Include="Src\main.cpp" />
+    <ClCompile Include="Src\Parser\Layouts\layout.cpp" />
+    <ClCompile Include="Src\Parser\Layouts\objectlayout.cpp" />
+    <ClCompile Include="Src\Parser\Layouts\tilelayout.cpp" />
+    <ClCompile Include="Src\Parser\Load\loadmap.cpp" />
+    <ClCompile Include="Src\Parser\Nodes\datanode.cpp" />
+    <ClCompile Include="Src\Parser\Nodes\imagenode.cpp" />
+    <ClCompile Include="Src\Parser\Nodes\layernode.cpp" />
+    <ClCompile Include="Src\Parser\Nodes\mapnode.cpp" />
+    <ClCompile Include="Src\Parser\Nodes\objectgroupnode.cpp" />
+    <ClCompile Include="Src\Parser\Nodes\objectnode.cpp" />
+    <ClCompile Include="Src\Parser\Nodes\propertiesnode.cpp" />
+    <ClCompile Include="Src\Parser\Nodes\propertynode.cpp" />
+    <ClCompile Include="Src\Parser\Nodes\tilenode.cpp" />
+    <ClCompile Include="Src\Parser\Nodes\tilesetnode.cpp" />
+    <ClCompile Include="Src\Parser\Shapes\ellipse.cpp" />
+    <ClCompile Include="Src\Parser\Shapes\point.cpp" />
+    <ClCompile Include="Src\Parser\Shapes\polygone.cpp" />
+    <ClCompile Include="Src\Parser\Shapes\polyline.cpp" />
+    <ClCompile Include="Src\Parser\Shapes\shape.cpp" />
+    <ClCompile Include="Src\Parser\tinyxml2.cpp" />
+    <ClCompile Include="Src\Player\player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Entities\Animations\animation.h" />
+    <ClInclude Include="Src\Entities\Animations\animationmanager.h" />
+    <ClInclude Include="Src\Entities\Entity\assetmanager.h" />
+    <ClInclude Include="Src\Entities\Entity\csprite.h" />
+    <ClInclude Include="Src\Entities\Entity\cvertexarray.h" />
+    <ClInclude Include="Src\Entities\Entity\entity.h" />
+    <ClInclude Include="Src\Entities\Object\Actionable\irondoor.h" />
+    <ClInclude Include="Src\Entities\Object\Actionable\piketrap.h" />
+    <ClInclude Include="Src\Entities\Object\Actionable\pressureplate.h" />
+    <ClInclude Include="Src\Entities\Object\Collectable\key.h" />
+    <ClInclude Include="Src\Entities\Object\object.h" />
+    <ClInclude Include="Src\Entities\Object\physicalshape.h" />
+    <ClInclude Include="Src\Entities\Object\physicaltile.h" />
+    <ClInclude Include="Src\Entities\Object\Usable\chest.h" />
+    <ClInclude Include="Src\Entities\Object\Usable\lever.h" />
+    <ClInclude Include="Src\Entities\Object\Usable\stair.h" />
+    <ClInclude Include="Src\Entities\Object\Usable\torch.h" />
+    <ClInclude Include="Src\Entities\Object\Usable\wooddoor.h" />
+    <ClInclude Include="Src\Entities\Physic\debugphysic.h" />
+    <ClInclude Include="Src\Entities\Physic\mycontactlistenner.h" />
+    <ClInclude Include="Src\Entities\Physic\physicalbody.h" />
+    <ClInclude Include="Src\Entities\Physic\physicalentity.h" />
+    <ClInclude Include="Src\Entities\Playable\hero1.h" />
+    <ClInclude Include="Src\Entities\Playable\hero2.h" />
+    <ClInclude Include="Src\Entities\Playable\heroes.h" />
+    <ClInclude Include="Src\Entities\Playable\inventory.h" />
+    <ClInclude Include="Src\Entities\Playable\Inventory\Item\item.h" />
+    <ClInclude Include="Src\Entities\Statistics\stats.h" />
+    <ClInclude Include="Src\Entities\Tilemap\tilemap.h" />
+    <ClInclude Include="Src\Game\cview.h" />
+    <ClInclude Include="Src\Game\game.h" />
+    <ClInclude Include="Src\Game\Window\command.h" />
+    <ClInclude Include="Src\Game\Window\cwindow.h" />
+    <ClInclude Include="Src\Game\Window\eventmanager.h" />
+    <ClInclude Include="Src\Game\Window\inputmanager.h" />
+    <ClInclude Include="Src\Game\Window\settings.h" />
+    <ClInclude Include="Src\Game\World\box2dworld.h" />
+    <ClInclude Include="Src\Game\World\levelmanager.h" />
+    <ClInclude Include="Src\Game\World\world.h" />
+    <ClInclude Include="Src\Parser\Layouts\layout.h" />
+    <ClInclude Include="Src\Parser\Layouts\objectlayout.h" />
+    <ClInclude Include="Src\Parser\Layouts\tilelayout.h" />
+    <ClInclude Include="Src\Parser\Load\loadmap.h" />
+    <ClInclude Include="Src\Parser\Nodes\datanode.h" />
+    <ClInclude Include="Src\Parser\Nodes\imagenode.h" />
+    <ClInclude Include="Src\Parser\Nodes\layernode.h" />
+    <ClInclude Include="Src\Parser\Nodes\mapnode.h" />
+    <ClInclude Include="Src\Parser\Nodes\objectgroupnode.h" />
+    <ClInclude Include="Src\Parser\Nodes\objectnode.h" />
+    <ClInclude Include="Src\Parser\Nodes\propertiesnode.h" />
+    <ClInclude Include="Src\Parser\Nodes\propertynode.h" />
+    <ClInclude Include="Src\Parser\Nodes\tilenode.h" />
+    <ClInclude Include="Src\Parser\Nodes\tilesetnode.h" />
+    <ClInclude Include="Src\Parser\Shapes\ellipse.h" />
+    <ClInclude Include="Src\Parser\Shapes\point.h" />
+    <ClInclude Include="Src\Parser\Shapes\polygone.h" />
+    <ClInclude Include="Src\Parser\Shapes\polyline.h" />
+    <ClInclude Include="Src\Parser\Shapes\shape.h" />
+    <ClInclude Include="Src\Parser\tinyxml2.h" />
+    <ClInclude Include="Src\Player\player.h" />
+    <ClInclude Include="Src\Tools\smartpointer.h" />
+    <ClInclude Include="Src\Tools\utility.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
